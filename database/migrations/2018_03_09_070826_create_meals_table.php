@@ -23,6 +23,7 @@ class CreateMealsTable extends Migration
             $table->float('salePrice');
             $table->float('taxRate');
             $table->integer('restaurant_id');
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

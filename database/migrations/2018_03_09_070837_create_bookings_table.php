@@ -17,7 +17,7 @@ class CreateBookingsTable extends Migration
             $table->increments('id');
             $table->date('bookedDate');
             $table->integer('numberCtx');
-            $table->integer('user_id');
+            $table->integer('customer_id');
             $table->integer('restaurant_id');
             $table->text('comment');
             $table->timestamps();

@@ -8,6 +8,6 @@ class Meal extends Model
 {
     protected $fillable =[
 
-        'name','description','photo','quantityInStock','buyPrice','salePrice','tauxTVA','restaurant_id'
+            'name','description','photo','quantityInStock','buyPrice','salePrice','tauxTVA','restaurant_id','user_id'
     ];
 }

@@ -16,10 +16,17 @@ Route::get('/', function () {
 });
 
 
-Route::get('yo', function () {
-    return 'hello bro!';
+Route::resource('meal','MealController');
+
+Route::get('booking', function () {
+    return view('booking');
+});
+
+Route::get('order', function () {
+    return view('order');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
